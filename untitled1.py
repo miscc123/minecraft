@@ -1,32 +1,16 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Aug 21 09:33:10 2018
+Created on Thu Aug 23 10:21:04 2018
 
-@author: NTP
+@author: NTPU
 """
 from mcpi.minecraft import Minecraft
 miscc123=Minecraft.create()
-import time
-x,y,z=miscc123.player.getPos()
-while y<=1000:
-    miscc123.setBlock(x,y-1,z,60)
-    time.sleep(0.2)
-    miscc123.setBlock(x+1,y-1,z,60)
-    time.sleep(0.2)
-    miscc123.setBlock(x+1+1,y-1,z,60)
-    time.sleep(0.2)
-    miscc123.setBlock(x+2,y-1,z-1,60)
-    time.sleep(0.2)
-    miscc123.setBlock(x+2,y-1,z-2,60)
-    time.sleep(0.2)
-    miscc123.setBlock(x+1,y-1,z-2,60)
-    time.sleep(0.2)
-    miscc123.setBlock(x,y-1,z-2,60)
-    time.sleep(0.2)
-    miscc123.setBlock(x,y-1,z-1,60)
-    time.sleep(0.2)
-    y = y+1
-
-
-
-
+number = 1
+x,y,z = miscc123.player.getPos()
+for j in range(10)
+    for i in range(number):
+        miscc123.spawnEntity(x,y,z,60)
+        
+    number = number*2
+    misc123.postToChat("恭喜妳生成了"+str(number)+"隻")
